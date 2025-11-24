@@ -1,7 +1,6 @@
 console.log('[boot] main.js loading')
-import { createApp } from 'vue'
+import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 import App from './App.vue'
-import './assets/styles/main.less' // global styles
 import { zeroClear } from './directives/zeroClear'
 
 const app = createApp(App)
