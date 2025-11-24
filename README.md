@@ -1,18 +1,48 @@
-# Vite Vue Starter
+# Warfighter Resource Points Counter
 
-This is a project template using [Vite](https://vitejs.dev/). It requires [Node.js](https://nodejs.org) version 18+ or 20+.
+A small helper tool for the Warfighter (DVG) tabletop wargame. During team setup players receive Resource Points (RP) which they spend on:
+- soldiers
+- guns
+- equipment
+- skills
 
-To start:
+The app speeds up setup by live tracking:
+- total RP spent
+- RP remaining
+- per-soldier RP allocation
 
-```sh
+## Features
+- Add / remove soldiers dynamically
+- Live totals (spent / remaining)
+- Automatic zero clearing on focus (custom v-zero-clear directive)
+- Global LESS styling (main.less)
+- One-click reset
+
+## Usage
+1. Enter total available Resources.
+2. Add soldiers (+ Add Soldier).
+3. Fill RP for soldier, gun, equipment, skill.
+4. Watch remaining RP update.
+5. Remove a soldier via Soldier downed button.
+
+## Development
+Install:
 npm install
+
+Dev server:
 npm run dev
 
-# if using yarn:
-yarn
-yarn dev
+Build:
+npm run build
 
-# if using pnpm:
-pnpm install
-pnpm run dev
-```
+Preview build:
+npm run preview
+
+## Tech Stack
+- Vue 3 + Vite
+- TypeScript (components)
+- LESS (global styles)
+- Custom Vue directive (v-zero-clear)
+
+## Note
+No licensed rules content included – this is only a helper calculator.
